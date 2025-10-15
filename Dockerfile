@@ -1,7 +1,4 @@
-# ───────────────────────────────────────
-# Stage 1: Build Caddy với plugin Cloudflare
-# ───────────────────────────────────────
-FROM golang:1.22-alpine AS builder
+FROM golang:1.25.3-alpine AS builder
 
 RUN apk add --no-cache git
 
@@ -13,10 +10,6 @@ RUN LDFLAGS="-s -w" xcaddy build \
 
 RUN strip /tmp/caddy
 
-
-# ───────────────────────────────────────
-# Stage 2: Runtime
-# ───────────────────────────────────────
 FROM alpine:latest
 
 RUN apk add --no-cache ca-certificates libcap mailcap wget
