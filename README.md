@@ -26,6 +26,7 @@ services:
       - 443:443
       - 443:443/udp
 ```
+- Sử dụng image: `bibica/caddy-dns-cloudflare`
 - Thay API Token vào `CLOUDFLARE_API_TOKEN`
 
 Khai báo tại Caddyfile
