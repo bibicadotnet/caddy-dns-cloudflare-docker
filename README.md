@@ -1,6 +1,6 @@
 # caddy-dns-cloudflare-docker
 
-Truy cập API Tokens
+Truy cập [API Tokens](https://dash.cloudflare.com/profile/api-tokens)
 
 - Nhấn “Create Token”
 - Chọn Template: Edit zone DNS
